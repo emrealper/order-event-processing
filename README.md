@@ -15,4 +15,4 @@ and methods and tools to make load testing and monitoring memory and cpu consump
 * dotnet-counters
 
 ## Architecture:
-![architecture](https://raw.githubusercontent.com/emrealper/order-event-processing/main/media/Event%20Driven-Ordering%20Microservices%20Reference%20Application.png?token=AAC65XNG4LF6FWPINKFX3HLBMAXPQ)
+![architecture](https://github.com/emrealper/order-event-processing/raw/main/media/Event%20Driven-Ordering%20Microservices%20Reference%20Application.png)
