@@ -5,6 +5,7 @@
 * CQRS  
 * Event Sourcing (Using Kafka)
 * Domain Driven Design (DDD)  
+* Retry policy Dead Letter Topic (Queue)
 * Eventual Consistency  
 * Docker
 * Docker-Compose
