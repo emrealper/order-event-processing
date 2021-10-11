@@ -28,6 +28,12 @@ namespace Domain.AggregateModels.OrderAggregate
             CurrencyType = currencyType;
         }
 
+        public void SetLongDescription()
+        {
+            LongDescription = $"{ItemCode} {Brand} {Type} {Colour}";
+        }
+
+
         public string ItemCode { get; set; }
 
         public string Brand { get; set; }
@@ -38,6 +44,8 @@ namespace Domain.AggregateModels.OrderAggregate
 
 
         public string Colour { get; set; }
+
+        public string LongDescription { get; private set; }
 
         public int Quantity { get; set; }
 

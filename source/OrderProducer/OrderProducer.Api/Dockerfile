@@ -3,11 +3,13 @@
 FROM mcr.microsoft.com/dotnet/aspnet:3.1 AS base
 WORKDIR /app
 EXPOSE 80
-EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:3.1 AS build
 WORKDIR /src
 COPY ["OrderProducer.Api/OrderProducer.Api.csproj", "OrderProducer.Api/"]
+COPY ["Application/Application.csproj", "Application/"]
+COPY ["Domain/Domain.csproj", "Domain/"]
+COPY ["Infrastructure/Infrastructure.csproj", "Infrastructure/"]
 RUN dotnet restore "OrderProducer.Api/OrderProducer.Api.csproj"
 COPY . .
 WORKDIR "/src/OrderProducer.Api"
