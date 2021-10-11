@@ -130,7 +130,7 @@ Sample request: GET /api/Orders
 ### 2. GetById
 Sample request: GET /api/Orders/{id}
 
-### 3. GetById
+### 3. FullTextSearch
 Sample request: GET /api/Orders/customerSearch/{text}
 
 ## Log Monitoring
