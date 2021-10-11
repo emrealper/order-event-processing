@@ -110,7 +110,7 @@ Please see the content of HTTP `POST` request which extracted from **/orderEvent
 }
 ```
 
-## Use Case for Get and Full Text Search operation for  Order record (Sql Server)
+## Use Case for Get and Full Text Search operations for  Order record (Sql Server)
 
  Please open the following url for `Order Processing and Querying API`  to access swagger ui locally: http://localhost:5001/swagger/index.html 
 
