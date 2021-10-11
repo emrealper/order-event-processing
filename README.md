@@ -27,3 +27,9 @@ and for logging and log monitoring:
 
 ## Architecture:
 ![architecture](https://github.com/emrealper/order-event-processing/raw/main/media/Event%20Driven-Ordering%20Microservices%20Reference%20Application.png)
+
+## Description:
+This repo contains a sample architecture simulates a order creation journey between `Order Producer API` service and `Order Processing and Querying API` Service. The system consists of the following parts.
+
+* **Order Producer API** - An API which accepts post request to transform `NewOrder` record and send it to Kafka Order `topic`.
+* **Order Processing and Querying API** - An API and a Hosted Service (As a background worker) which subscribes the Kafka Order Topic `topic` and writes Order record to SQL Server database. This API also offers Get requests to view the saved Orders.
