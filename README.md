@@ -82,7 +82,7 @@ Statistics        Avg      Stdev        Max
     others - 0
   Throughput:    38.61KB/s
 ```
-Please see the content of HTTP `POST` request which extracted from **/orderEventData.json/**
+Please see the random order content of HTTP `POST` request which extracted from **/orderEventData.json/**
 
 ``` JSON
 {
