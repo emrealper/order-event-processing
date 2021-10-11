@@ -115,4 +115,33 @@ Please see the content of HTTP `POST` request which extracted from **/orderEvent
  Please open the following url for `Order Processing and Querying API`  to access swagger ui locally: http://localhost:5001/swagger/index.html 
  
  ![swagger](https://github.com/emrealper/order-event-processing/blob/main/media/OrderConsumerApiSwagger.png)
+ 
+ This consumer and querying app describes sample Search and Get requests :
+1. GetAll
+2. GetById
+3. FullTextSearch
+
+### 1. GetAll
+Sample request: GET /api/Orders
+
+### 2. GetById
+Sample request: GET /api/Orders/{id}
+
+### 3. GetById
+Sample request: GET /api/Orders/customerSearch/{text}
+
+
+### 2. GetById
+Sample request: GET /api/Orders/{id}
+
+
+## Log Monitoring
+
+Error logs and also event logs are able to monitor (http://localhost:5341) using centralized structured monitoring (Seq)
+
+## Author
+- Name: **Emre Alper**
+- Contact: **emrealper@gmail.com**
+
+
 
