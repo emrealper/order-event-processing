@@ -12,7 +12,7 @@
 * Docker-Compose
 
 Methods and tools to manage persistance and its transactions like:
-* SQL Server 2019 on docker
+* SQL Server 2017 on docker (custom image which supports Full Text Search and Indexing)
 * Entity Framework Core for `Command operations`
 * Dapper for `Query operations`
 
