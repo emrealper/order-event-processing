@@ -36,7 +36,7 @@ This repo contains a sample architecture simulates a order creation journey betw
 
 
 ## How to set up and run the project
-You can run the bellow command by navigating the **/source/OrderProducer/OrderProducer.Api/** directory to build docker images for  `Order Producer API*` 
+You can run the bellow command by navigating the **/source/OrderProducer/OrderProducer.Api/** directory to build docker images for  `Order Producer API` 
 ```powershell
 docker build -f "Dockerfile" -t orderproducer_rc ..
 ```
