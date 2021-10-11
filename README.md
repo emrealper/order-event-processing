@@ -33,3 +33,22 @@ This repo contains a sample architecture simulates a order creation journey betw
 
 * **Order Producer API** - An API which accepts post request to transform `NewOrder` record and send it to Kafka Order `topic`.
 * **Order Processing and Querying API** - An API and a Hosted Service (As a background worker) which subscribes the Kafka Order Topic `topic` and writes Order record to SQL Server database. This API also offers Get requests to view the saved Orders.
+
+
+## How to set up and run the project
+You can run the bellow command by navigating the **/source/OrderProducer/OrderProducer.Api/** directory to build docker images for  `Order Producer API*` 
+```powershell
+docker build -f "Dockerfile" -t orderproducer_rc ..
+```
+
+and the below command from the **/source/OrderConsumer/OrderConsumerQueryingService.Api/**  for `Order Processing and Querying API` 
+
+```powershell
+docker build -f "Dockerfile" -t orderconsumer_rc ..
+```
+
+after building docker images of two microservices you can run the below command by navigating the **/setup/** directory to run both 2 services, SQL Server and service bus enviroments (Kafka and Zookeeper) and logserver (seq)
+
+```powershell
+docker-compose up
+```
