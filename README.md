@@ -20,6 +20,9 @@ Methods and tools to manage persistance and its transactions like:
 Load & Stress testing and monitoring Latency and Throughput  :
 * Bombardier
 
+Unit Testing  :
+* XUnit
+
 and for logging and log monitoring:
 
 * Nlog
