@@ -7,6 +7,7 @@
 * Domain Driven Design (DDD)  
 * Retry policy Dead Letter Topic (Queue)
 * Eventual Consistency  
+* Custom Middleware for exception handling
 * Docker
 * Docker-Compose
 
