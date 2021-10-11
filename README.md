@@ -53,7 +53,7 @@ after building docker images of two microservices you can run the below command 
 docker-compose up
 ```
 
-## Load testing and performance monitoring
+## Load & Stress testing and monitoring Latency/Throughput
 
 To test the application i use `bombardier` which is written in Go programming language to simulate many HTTP(S) request concurently sent from different clients.
 
