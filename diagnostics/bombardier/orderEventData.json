@@ -1,0 +1,23 @@
+{
+  "customerId": 23982398,
+  "customerName": "Emre",
+  "customerLastName": "Alper",
+  "customerEmail": "emrealper@gmail.com",
+  "shippingAddress": "AgricolaStrasse 35, München, Germany",
+  "billingAddress": "AgricolaStrasse 35, München, Germany",
+  "currencyType": 1,
+  "totalPrice": 240,
+  "paymentMethodType": 1,
+  "orderItems": [
+    {
+      "itemCode": "10293098",
+      "brand": "Jack Wolfskin",
+      "type": "Parka",
+      "size": "XL",
+      "colour": "Black",
+      "quantity": 1,
+      "price": 240,
+      "currencyType": 1
+    }
+  ]
+}
