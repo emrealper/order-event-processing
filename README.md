@@ -13,7 +13,7 @@
 
 Methods and tools to manage persistance and its transactions like:
 * SQL Server 2017 on docker (custom image which supports Full Text Search and Indexing)
-* Entity Framework Core for `Command operations`
+* Entity Framework Core for `Command operations` and `Data Migrations`
 * Dapper for `Query operations`
 
 
