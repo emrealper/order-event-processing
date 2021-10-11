@@ -62,3 +62,50 @@ You can run the below command by navigating  **/diagnostics/bombardier/** direct
 ```powershell
 docker build -t alpine/bombardier .
 ```
+
+## Let's start load testing using `bombardier` 
+![machine-gun](https://i.imgur.com/2u6JJnh.gif)
+
+You can run the below command using powershell or command prompt to make concurent  `HTTP POST ` request to  `Order Producer API`. It simulates 50 http calls per second from 50 different clients during 100 seconds.
+
+### Running and result
+
+```powershell
+docker run -ti --rm alpine/bombardier -c 50 -d 100s --rate 50 -m POST "http://host.docker.internal:5000/api/Order" -H "Content-Type: application/json" -f "orderEventData.json"
+Bombarding http://host.docker.internal:5000/api/Order for 1m40S using 50 connection(s)Bombarding http://host.docker.internal:5000/api/Order for 1m40s using 50 connection(s)
+[=====================================================================================================================================================================================================================================] 1m40sDone!
+Statistics        Avg      Stdev        Max
+  Reqs/sec        49.41      20.90     380.26
+  Latency      166.28ms   262.52ms      2.70s
+  HTTP codes:
+    1xx - 0, 2xx - 4948, 3xx - 0, 4xx - 0, 5xx - 0
+    others - 0
+  Throughput:    38.61KB/s
+```
+Please see the content of HTTP `POST` request which extracted from **/orderEventData.json/**
+
+``` JSON
+{
+  "customerId": 23982398,
+  "customerName": "Emre",
+  "customerLastName": "Alper",
+  "customerEmail": "emrealper@gmail.com",
+  "shippingAddress": "AgricolaStrasse 35, München, Germany",
+  "billingAddress": "AgricolaStrasse 35, München, Germany",
+  "currencyType": 1,
+  "totalPrice": 240,
+  "paymentMethodType": 1,
+  "orderItems": [
+    {
+      "itemCode": "10293098",
+      "brand": "Jack Wolfskin",
+      "type": "Parka",
+      "size": "XL",
+      "colour": "Black",
+      "quantity": 1,
+      "price": 240,
+      "currencyType": 1
+    }
+  ]
+}
+```
