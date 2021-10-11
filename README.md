@@ -133,11 +133,6 @@ Sample request: GET /api/Orders/{id}
 ### 3. GetById
 Sample request: GET /api/Orders/customerSearch/{text}
 
-
-### 2. GetById
-Sample request: GET /api/Orders/{id}
-
-
 ## Log Monitoring
 
 Error logs and also event logs are able to monitor (http://localhost:5341) using centralized structured monitoring (Seq)
