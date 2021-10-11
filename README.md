@@ -17,9 +17,8 @@ Methods and tools to manage persistance and its transactions like:
 * Dapper for `Query operations`
 
 
-Load & Stress testing and monitoring memory and cpu consumption like  :
+Load & Stress testing and monitoring Latency and Throughput  :
 * Bombardier
-* dotnet-counters
 
 and for logging and log monitoring:
 
